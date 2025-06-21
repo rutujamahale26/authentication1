@@ -6,7 +6,7 @@ import userRoutes from './routes/userRoutes.js';
 import 'dotenv/config';
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 // CORS config for local frontend (localhost:3000)
 app.use(cors({
